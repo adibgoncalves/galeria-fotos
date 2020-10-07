@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    text-align: center;
+}
+
+body {
+    background-color: #EDEBD7;
+}
+
+img {
+    height: 500px;
+    border-radius: 20px;
+
+    -webkit-box-shadow: 10px 10px 24px -21px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 24px -21px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 24px -21px rgba(0,0,0,0.75);
+}
+
+
+
+button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+
+    height: 50px;
+    width: 100px;
+
+    margin: 0 10px;
+
+    background: #E3B23C;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #423E37;
+}
+
+.count {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+.noimage {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}

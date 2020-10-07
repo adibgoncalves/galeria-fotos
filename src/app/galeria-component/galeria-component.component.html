@@ -1,0 +1,31 @@
+<h1 class="title"> {{title}} </h1>
+
+<div class="noimage" *ngIf="photos.length === 0">
+    Nenhuma imagem
+</div>
+
+<div *ngIf="photos.length > 0">
+    <img [src]="photos[currentImage]">
+</div>
+
+<div class="count" *ngIf="photos.length != 0">
+    <p>Foto {{currentImage + 1}} de {{photos.length}} </p>
+</div>
+
+<div *ngIf="photos.length != 0">
+    <button 
+    [disabled]="currentImage == 0" 
+    (click)="firstImage()">Primeira foto</button>
+
+    <button 
+    [disabled]="currentImage == 0"
+    (click)="back()">Anterior</button>
+
+    <button 
+    [disabled]="currentImage == photos.length - 1"
+    (click)="next()">Próxima</button>
+
+    <button 
+    [disabled]="currentImage == photos.length - 1" 
+    (click)="lastImage()">Última foto</button>
+</div>
